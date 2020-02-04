@@ -14,6 +14,16 @@
 </head>
 <body>
 
+    <!-- <input type="text" id="latitudeInput" name="Latitude" placeholder="Latitude">
+    <input type="text" id="longitudeInput" name="Longitude" placeholder="Longitude"> 
+    <button onclick="getValue()">Fill in latitude and longitude and enter</button> -->
+
+    <input id="lat" placeholder="Enter the latitude of your desired hiking location">
+    <input id="long" placeholder="Enter the longitude of your desired hiking location">
+
+    <button value="send" id="submit" onclick="latFunc(); longFunc() ">Search</button>
+    <!-- <button value="send" id="submit" onclick="longFunc()">Search</button> -->
+
     <div class="trail-container">
         <img class="image">
         <p class="name">Name: </p>

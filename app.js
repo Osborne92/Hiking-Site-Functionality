@@ -1,5 +1,31 @@
-const latitude = "40.2398"
-const longitude = "-76.9200"
+// const button = document.querySelector('button')
+
+// document.getElementById("latitudeInput").value = "enter the latitude of your hiking destination";
+// document.getElementById("longitudeInput").value = "enter the latitude of your hiking destinition";
+
+// function getValue() {
+//     let longitudeInput = document.getElementById('longitudeInput').value;
+//     let latitudeInput = document.getElementById('latitudeInput').value;
+//     latitudeInput == latitude
+//     longitudeInput == longitude
+//     location.reload(true);
+//     }
+
+    let latitude = "40.2398"
+    let longitude = "-76.9200"
+
+    function latFunc() {
+        let latitude = document.getElementById("lat").value;
+        console.log(latitude);
+    }
+
+    function longFunc() {
+        let longitude = document.getElementById("long").value;
+        console.log(longitude);
+    }
+
+    latFunc();
+    longFunc();
 
 $.getJSON("https://www.hikingproject.com/data/get-trails?lat=" + latitude + "&lon=" + longitude + "&maxDistance=10&key=200441732-638bb9d20ee445380f3da709a8c7ebbe", function (data) {
     
