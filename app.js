@@ -24,7 +24,7 @@ function callApi() {
                 // let location = data.trails[i].location
                 // let length = data.trails[i].length
                 // let ascent = data.trails[i].ascent
-                $('.card-columns').append('<div class="card bg-dark text-white"> <div class="image"><img src="' + image + '"/></div><div class="card-img-overlay"> <p class="name">' + name + '</p><p class="stars">' + stars + '</p><p class="starvotes">' + starvotes + '</p></div></div>    ');
+                $('.card-columns').append('<div class="card bg-dark text-white"><img class="card-img" src="' + image + '"/><div class="card-img-overlay"> <p class="name">' + name + '</p><p class="stars">' + stars + '</p><p class="starvotes">' + starvotes + '</p></div></div>    ');
                 // $('.card-img-overlay').append('<p class="card-title">' + name + '</p><p class="card-text">' + stars + '</p><p class="card-text">' + starvotes + '</p>');
                 // $('.trail-container').append('<div class="image"><img src="' + image + '"/></div><p class="name">' + name + '</p><p class="stars">' + stars + '</p><p class="starvotes">' + starvotes + '</p><p class="location">' + location + '</p><p class="length">' + length + '</p><p class="ascent">' + ascent + '</p>');
             };
