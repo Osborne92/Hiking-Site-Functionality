@@ -27,7 +27,7 @@ function callApi() {
                 $('.card-columns').append('<div class="card bg-dark text-white"><img class="card-img" src="' + image + '"/><div class="card-img-overlay"> <p class="name">' + name + '</p><p class="stars">' + stars + " stars" + '</p><p class="starvotes">' + starvotes + " votes" + '</p></div></div>');
              };
             $('img').on("error", function() {
-                $(this).attr('src', 'https://source.unsplash.com/random/?nature');
+                $(this).attr('src', `https://source.unsplash.com/collection/${244339}`);
               });
             })
         });
