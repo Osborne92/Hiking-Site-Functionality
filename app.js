@@ -1,6 +1,8 @@
     // let latitude = "40.2398"
     // let longitude = "-76.9200"
 
+
+
 function callApi() {
     let latitude = document.getElementById("lat").value;
     let longitude = document.getElementById("long").value;
@@ -18,16 +20,24 @@ function callApi() {
             let i;
             for (i = 0; i < trails.length; ++i) {
                 let image = data.trails[i].imgMedium;
-                let name = data.trails[i].name
+                let name = data.trails[i].name  
                 let stars = data.trails[i].stars
                 let starvotes = data.trails[i].starVotes
-                // let location = data.trails[i].location
-                // let length = data.trails[i].length
-                // let ascent = data.trails[i].ascent
-                $('.card-columns').append('<div class="card bg-dark text-white"><img class="card-img" src="' + image + '"/><div class="card-img-overlay"> <p class="name">' + name + '</p><p class="stars">' + stars + " stars" + '</p><p class="starvotes">' + starvotes + " votes" + '</p></div></div>    ');
-                // $('.card-img-overlay').append('<p class="card-title">' + name + '</p><p class="card-text">' + stars + '</p><p class="card-text">' + starvotes + '</p>');
-                // $('.trail-container').append('<div class="image"><img src="' + image + '"/></div><p class="name">' + name + '</p><p class="stars">' + stars + '</p><p class="starvotes">' + starvotes + '</p><p class="location">' + location + '</p><p class="length">' + length + '</p><p class="ascent">' + ascent + '</p>');
-            };
-        })
-    });
-}
+                
+                $('.card-columns').append('<div class="card bg-dark text-white"><img class="card-img" src="' + image + '"/><div class="card-img-overlay"> <p class="name">' + name + '</p><p class="stars">' + stars + " stars" + '</p><p class="starvotes">' + starvotes + " votes" + '</p></div></div>');
+             };
+            $('img').on("error", function() {
+                $(this).attr('src', 'https://source.unsplash.com/random/?nature');
+              });
+            })
+        });
+    }
+
+// 'https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+
+
+
+
+
+
+
